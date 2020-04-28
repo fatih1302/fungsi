@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+void jumlah(){
+    int a,b;  
+    cout<<"Penjumlahan"<<endl;
+    cout<<"Masukkan Angka 1: ";
+    cin>>a;
+    cout<<"Masukkan angka 2: ";
+    cin>>b;
+    cout<<"Hasil :"<<a+b<<endl;
+    cout<<endl;
+}
+void kurang(){
+    int a,b;
+    cout<<"Pengurangan"<<endl;
+    cout<<"Masukkan Angka 1: ";
+    cin>>a;
+    cout<<"Masukkan angka 2: ";
+    cin>>b;
+    cout<<"Hasil: "<<a-b<<endl;
+    cout<<endl;
+}
+void kali(){
+       int a,b;
+    cout<<"Perkalian"<<endl;
+    cout<<"Masukkan Angka 1: ";
+    cin>>a;
+    cout<<"Masukkan angka 2: ";
+    cin>>b;
+    cout<<"Hasil: "<<a*b<<endl;
+    cout<<endl;
+}
+void bagi(){
+    double a,b;
+    cout<<"Pembagian"<<endl;
+    cout<<"Masukkan Angka 1: ";
+    cin>>a;
+    cout<<"Masukkan angka 2: ";
+    cin>>b;
+    cout<<"Hasil: "<<a/b<<endl;
+    cout<<endl;
+}
+
+int main(){ 
+	int c;
+	cout<<"1.Penjumlahan"<<endl;
+	cout<<"2.Pengurangan"<<endl;
+	cout<<"3.Perkalian"<<endl;
+	cout<<"4.Pembagian"<<endl;
+	cout<<"Pilih Pogram : ";cin>>c;
+	if (c==1) {jumlah();
+	}
+	else if (c==2) {kurang();
+	}
+	else if (c==3) {kali();
+	}
+	else if (c==4) {bagi();
+	}
+	else {
+		cout<<"angka yang anda masukan salah";
+	}
+    return 0;
+}
